@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/dist/inc/css/normalize.css">
-  <link rel="stylesheet" href="/dist/inc/css/bs.modal.css">
+  <link rel="stylesheet" href="/dist/inc/css/modal.css">
   <link rel="stylesheet" href="/dist/inc/css/grid.css">
   <link rel="stylesheet" href="/dist/inc/css/main.css">
 
@@ -26,6 +26,9 @@
             </a>
           </div>
           <div class="header__nav">
+            <div class="header__nav-burger">
+              <img src="./images/icons/burger.svg" alt="menu">
+            </div>
             <nav>
               <ul class="nav__list">
                 <li class="nav__item">
@@ -57,6 +60,9 @@
           mb-3">
             <h1 class="main-title">Distek – дистрибьютор
               программного обеспечения</h1>
+              <span class="partners__info-text">
+                программное обеспечение для ваших задач
+              </span>
             <div class="partners-list">
               <ul class="partners__list">
                 <li class="partners__list-item logo-link">
@@ -93,10 +99,6 @@
                 </li>
               </ul>
             </div>
-
-            <span class="partners__info-text">
-              программное обеспечение для ваших задач
-            </span>
           </div>
 
           <div class="partners-bottom">
@@ -230,6 +232,9 @@
       </section>
 
       <section class="soft container">
+
+        <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"><defs><filter id="white-block-corner-round"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" /><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" /><feComposite in="SourceGraphic" in2="goo" operator="atop"/></filter></defs></svg>
+
         <div class="white-block">
           <h2 class="main-title">
             Программное обеспечение для ваших задач
@@ -237,107 +242,119 @@
         </div>
         <div class="row">
           <div class="col-lg-4">
-            <div class="soft-item ">
-              <div class="soft-item__header">
-                <div class="soft-item__number">
-                  <img src="./images/icons/one.svg" alt="one">
-                </div>
-                <h3 class="soft-item__title">
-                  Эскизное <br> 3d-моделирование</h3>
+            <div class="clip-corner-block">
+              <div class="clip-corner__number">
+                <img src="./images/icons/one.svg" alt="one">
               </div>
-              <div class="soft-item__body">
-                <div class="soft-item__img">
-                  <img src="./images/soft-img-1.png" alt="">
-                </div>
-                <div class="soft-item__desc">
-                  <li class="logo-link">
-                    <div class="logo-link__img">
-                      <img src="./images/logos/sketchup-logo.svg" alt="sketchup">
+              <div class="clip-corner-wrapper">
+                <div class="soft-item clip-corner-item">
+                  <div class="soft-item__header clip-corner__header">
+                    <h3 class="soft-item__title">
+                      Эскизное <br> 3d&#8209;моделирование</h3>
+                  </div>
+                  <div class="soft-item__body">
+                    <div class="soft-item__img">
+                      <img src="./images/soft-img-1.png" alt="">
                     </div>
-                    <a href="" class="logo-link__text">
-                      Trimble connect
-                    </a>
-                  </li>
-                  <ul class="markers-list markers-list_black">
-                    <li>Быстрое, простое и качественное создание 3D-моделей любых объектов по чертежу, изображению, фотографии и т.д.</li>
-                    <li>Оформление проектной документации по требованиям ЕСКД и СПДС, создание отчётов и спецификаций</li>
-                    <li>Крупнейшая библиотека бесплатных 3D-моделей</li>
-                    <li>Просмотр модели в виртуальной реальности </li>
-                    <li>Обмер помещений непосредственно в SketchUp</li>
-                  </ul>
+                    <div class="soft-item__desc">
+                      <li class="logo-link">
+                        <div class="logo-link__img">
+                          <img src="./images/logos/sketchup-logo.svg" alt="sketchup">
+                        </div>
+                        <a href="" class="logo-link__text">
+                          Trimble connect
+                        </a>
+                      </li>
+                      <ul class="markers-list markers-list_black">
+                        <li>Быстрое, простое и качественное создание 3D-моделей любых объектов по чертежу, изображению, фотографии и т.д.</li>
+                        <li>Оформление проектной документации по требованиям ЕСКД и СПДС, создание отчётов и спецификаций</li>
+                        <li>Крупнейшая библиотека бесплатных 3D-моделей</li>
+                        <li>Просмотр модели в виртуальной реальности </li>
+                        <li>Обмер помещений непосредственно в SketchUp</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="soft-item">
-              <div class="soft-item__header">
-                <div class="soft-item__number">
-                  <img src="./images/icons/two.svg" alt="two">
-                </div>
-                <h3 class="soft-item__title">Моделирование
-                  <br> и деталировка</h3>
+            <div class="clip-corner-block">
+              <div class="clip-corner__number">
+                <img src="./images/icons/two.svg" alt="two">
               </div>
-              <div class="soft-item__body">
-                <div class="soft-item__img">
-                  <img src="./images/soft-img-2.png" alt="">
-                </div>
-                <div class="soft-item__desc">
-                  <li class="logo-link">
-                    <div class="logo-link__img">
-                      <img src="./images/logos/tekla-logo.svg" alt="sketchup">
+              <div class="clip-corner-wrapper">
+                <div class="soft-item clip-corner-item">
+                  <div class="soft-item__header clip-corner__header">
+                    <h3 class="soft-item__title">Моделирование
+                      <br> и деталировка</h3>
+                  </div>
+                  <div class="soft-item__body">
+                    <div class="soft-item__img">
+                      <img src="./images/soft-img-2.png" alt="">
                     </div>
-                    <a href="" class="logo-link__text">
-                      Tekla structures
-                    </a>
-                  </li>
-                  <li class="logo-link">
-                    <div class="logo-link__img">
-                      <img src="./images/logos/tekla-logo.svg" alt="sketchup">
+                    <div class="soft-item__desc">
+                      <li class="logo-link">
+                        <div class="logo-link__img">
+                          <img src="./images/logos/tekla-logo.svg" alt="sketchup">
+                        </div>
+                        <a href="" class="logo-link__text">
+                          Tekla structures
+                        </a>
+                      </li>
+                      <li class="logo-link">
+                        <div class="logo-link__img">
+                          <img src="./images/logos/tekla-logo.svg" alt="sketchup">
+                        </div>
+                        <a href="" class="logo-link__text">
+                          Tekla model sharing
+                        </a>
+                      </li>
+                      <ul class="markers-list markers-list_black">
+                        <li>Создание информационной модели с высоким уровнем детализации (LOD 500)</li>
+                        <li>Совместная работа над проектом с неограниченным количеством участников </li>
+                        <li>Создание отчетов и экспорт ЧПУ файлов</li>
+                        <li>Экономическая оценка конструкций на этапе планирования</li>
+                        <li>Проверка на коллизии в один клик</li>
+                      </ul>
                     </div>
-                    <a href="" class="logo-link__text">
-                      Tekla model sharing
-                    </a>
-                  </li>
-                  <ul class="markers-list markers-list_black">
-                    <li>Создание информационной модели с высоким уровнем детализации (LOD 500)</li>
-                    <li>Совместная работа над проектом с неограниченным количеством участников </li>
-                    <li>Создание отчетов и экспорт ЧПУ файлов</li>
-                    <li>Экономическая оценка конструкций на этапе планирования</li>
-                    <li>Проверка на коллизии в один клик</li>
-                  </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="soft-item">
-              <div class="soft-item__header">
-                <div class="soft-item__number">
-                  <img src="./images/icons/three.svg" alt="three">
-                </div>
-                <h3 class="soft-item__title">Доступ к проектной <br> информации</h3>
+            <div class="clip-corner-block">
+              <div class="clip-corner__number">
+                <img src="./images/icons/three.svg" alt="three">
               </div>
-              <div class="soft-item__body">
-                <div class="soft-item__img">
-                  <img src="./images/soft-img-3.png" alt="">
-                </div>
-                <div class="soft-item__desc">
-                  <li class="logo-link">
-                    <div class="logo-link__img">
-                      <img src="./images/logos/trimble-connect-logo.svg" alt="sketchup">
+              <div class="clip-corner-wrapper">
+                <div class="soft-item clip-corner-item">
+                  <div class="soft-item__header clip-corner__header">
+                    <h3 class="soft-item__title">Доступ к проектной <br> информации</h3>
+                  </div>
+                  <div class="soft-item__body">
+                    <div class="soft-item__img">
+                      <img src="./images/soft-img-3.png" alt="">
                     </div>
-                    <a href="" class="logo-link__text">
-                      Trimble connect
-                    </a>
-                  </li>
-                  <ul class="markers-list markers-list_black">
-                    <li>Совместная работа над проектом из любой точки мира</li>
-                    <li>Неограниченное облачное хранилище документов и моделей</li>
-                    <li>Контроль изменений в проекте </li>
-                    <li>Назначение статуса и определение сроков выполнения задач</li>
-                    <li>Просмотр сведения о проекте в мобильном приложении Trimble Connect или VR-гарнитуре</li>
-                  </ul>
+                    <div class="soft-item__desc">
+                      <li class="logo-link">
+                        <div class="logo-link__img">
+                          <img src="./images/logos/trimble-connect-logo.svg" alt="sketchup">
+                        </div>
+                        <a href="" class="logo-link__text">
+                          Trimble connect
+                        </a>
+                      </li>
+                      <ul class="markers-list markers-list_black">
+                        <li>Совместная работа над проектом из любой точки мира</li>
+                        <li>Неограниченное облачное хранилище документов и моделей</li>
+                        <li>Контроль изменений в проекте </li>
+                        <li>Назначение статуса и определение сроков выполнения задач</li>
+                        <li>Просмотр сведения о проекте в мобильном приложении Trimble Connect или VR-гарнитуре</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -436,7 +453,7 @@
         <div class="news-bottom">
 
           <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <defs><filter id="corner-round"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" /><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" /><feComposite in="SourceGraphic" in2="goo" operator="atop"/></filter></defs></svg>
+          <defs><filter id="news-corner-round"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" /><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" /><feComposite in="SourceGraphic" in2="goo" operator="atop"/></filter></defs></svg>
 
           <div class="row">
             <div class="col-xxl-3 col-lg-6 col-md-6 mb-4">
@@ -516,6 +533,8 @@
 
     </main>
 
+
+
     <footer class="footer container">
       <div class="footer-wrapper">
         <div class="footer-top white-block">
@@ -589,7 +608,7 @@
         </div>
         <div class="footer-bottom">
           <div class="footer__get-consult">
-            <a href="#" class="btn btn_type_blue btn_size_lg">
+            <a href="#modal_consult" class="btn btn_type_blue btn_size_lg" data-toggle="modal">
               Получить консультацию
             </a>
           </div>
@@ -618,6 +637,107 @@
 
       </div>
     </footer>
+
+    <div class="modal fade" id="modal_consult">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">заказать <br> звонок</h3>
+            <h4 class="modal-subtitle"></h4>
+            <button class="close" data-dismiss="modal" aria-label="Close">
+              <img src="./images/icons/modal-close.svg" alt="close">
+            </button>
+          </div>
+          <div class="modal-body">
+
+              <form id="" class="modalForm" action="/">
+
+                  <div class="form-item">
+                    <input type="text" class="form-control" required="" placeholder="Ваше имя*">
+                  </div>
+
+                  <div class="form-item">
+                    <input type="text" class="form-control" required="" placeholder="Номер телефона*">
+                  </div>
+
+                  <div class="form-item">
+                    <input type="email" class="form-control error" required="" placeholder="Email">
+                    <div class="invalid-feedback">Заполните поле</div>
+                  </div>
+
+                  <div class="form-item">
+                    <input type="text" class="party_suggestion form-control suggestions-input error" required="" placeholder="Название компании*" value="" >
+                    <div class="invalid-feedback">Заполните поле</div>
+                    <span class="party_suggestion__info">Источники данных - ЕГРЮЛ и ЕГРИП Налоговой службы</span>
+                  </div>
+
+                  <div class="form-item">
+                    <input type="text" class="form-control" required="" placeholder="Должность*">
+                  </div>
+
+                  <div class="form-item-flex">
+                    <div class="form-item__checkbox">
+                      <input type="checkbox" class="" id="subscribe-checkbox">
+                      <label for="subscribe-checkbox">подписаться на рассылку Distek</label>
+                    </div>
+                    <div class="form-item__submit">
+                      <input class="btn btn_type_blue btn_size_lg" type="submit" name="web_form_submit" value="Отправить">
+                    </div>
+                  </div>
+
+                  <div class="form-agreement">
+                    <p>Поля отмеченные * - обязательны к заполнению</p>
+                    <p>отправляя заполненную форму, вы принимаете условия <a target="_blank" href="/privacy_policy/">политики обработки персональных данных</a> и подписываете <a href="https://csd.ru/soglasie/" target="_blank">заявение-согласие субъекта</a> на передачу его персональных данных третьей стороне.</p>
+                  </div>
+
+              </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalMessage">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">спасибо!</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <img src="./images/icons/modal-close.svg" alt="close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="success">
+              <div class="success__title">Наши эксперты свяжутся с Вами в ближайшее время.
+                <br> Подпишитесь на нашу рассылку, чтобы быть в курсе новостей!
+              </div>
+              <button type="button" class="btn btn_type_blue btn_size_lg btn_modal_goback" data-dismiss="modal" aria-label="Close">
+                Вернуться на страницу
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalErrorMessage">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Произошла ошибка</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <img src="./images/icons/modal-close.svg" alt="close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="success">
+              <div class="success__title">Повторите попытку немного позже!</div>
+            </div>
+            <button type="button" class="btn btn_type_blue btn_size_lg btn_modal_goback" data-dismiss="modal" aria-label="Close">
+              Вернуться на страницу
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 
