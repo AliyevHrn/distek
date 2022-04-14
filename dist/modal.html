@@ -1,0 +1,100 @@
+<div class="modal fade" id="modal_consult">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">заказать <br> звонок</h3>
+        <h4 class="modal-subtitle"></h4>
+        <button class="close" data-dismiss="modal" aria-label="Close">
+          <img src="./images/icons/modal-close.svg" alt="close">
+        </button>
+      </div>
+      <div class="modal-body">
+
+          <form id="" class="modalForm" action="/">
+
+              <div class="form-item">
+                <input type="text" class="form-control" required="" placeholder="Ваше имя*">
+              </div>
+
+              <div class="form-item">
+                <input type="text" class="form-control" required="" placeholder="Номер телефона*">
+              </div>
+
+              <div class="form-item">
+                <input type="email" class="form-control error" required="" placeholder="Email">
+                <div class="invalid-feedback">Заполните поле</div>
+              </div>
+
+              <div class="form-item">
+                <input type="text" class="party_suggestion form-control suggestions-input error" required="" placeholder="Название компании*" value="" >
+                <div class="invalid-feedback">Заполните поле</div>
+                <span class="party_suggestion__info">Источники данных - ЕГРЮЛ и ЕГРИП Налоговой службы</span>
+              </div>
+
+              <div class="form-item">
+                <input type="text" class="form-control" required="" placeholder="Должность*">
+              </div>
+
+              <div class="form-item-flex">
+                <div class="form-item__checkbox">
+                  <input type="checkbox" class="" id="subscribe-checkbox">
+                  <label for="subscribe-checkbox">подписаться на рассылку Distek</label>
+                </div>
+                <div class="form-item__submit">
+                  <input class="btn btn_type_blue btn_size_lg" type="submit" name="web_form_submit" value="Отправить">
+                </div>
+              </div>
+
+              <div class="form-agreement">
+                <p>Поля отмеченные * - обязательны к заполнению</p>
+                <p>отправляя заполненную форму, вы принимаете условия <a target="_blank" href="/privacy_policy/">политики обработки персональных данных</a> и подписываете <a href="https://csd.ru/soglasie/" target="_blank">заявение-согласие субъекта</a> на передачу его персональных данных третьей стороне.</p>
+              </div>
+
+          </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalMessage">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">спасибо!</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="./images/icons/modal-close.svg" alt="close">
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="success">
+          <div class="success__title">Наши эксперты свяжутся с Вами в ближайшее время.
+            <br> Подпишитесь на нашу рассылку, чтобы быть в курсе новостей!
+          </div>
+          <button type="button" class="btn btn_type_blue btn_size_lg btn_modal_goback" data-dismiss="modal" aria-label="Close">
+            Вернуться на страницу
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalErrorMessage">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Произошла ошибка</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="./images/icons/modal-close.svg" alt="close">
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="success">
+          <div class="success__title">Повторите попытку немного позже!</div>
+        </div>
+        <button type="button" class="btn btn_type_blue btn_size_lg btn_modal_goback" data-dismiss="modal" aria-label="Close">
+          Вернуться на страницу
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
