@@ -106,9 +106,9 @@
   justify-content: space-between;
 }
 @media (min-width: 575px) {
-  .container {
-    max-width: 540px;
-  }
+  /* .container{
+      max-width: 540px;
+  } */
   .col-sm-2 {
     width: 16.6%;
   }
@@ -144,9 +144,9 @@
   }
 }
 @media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
+  /* .container{
+      max-width: 720px;
+  } */
   .col-md-2 {
     width: 16.6%;
   }
